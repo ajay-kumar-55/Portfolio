@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajay — Builder & Creator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">AJ.</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#aspirations">Aspirations</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-grid-line"></div>
+      <div class="hero-grid-line"></div>
+      <div class="hero-grid-line"></div>
+
+      <div class="hero-tag">Developer & Creator</div>
+
+      <h1>
+        I Build
+        <span class="accent-text">Things That</span>
+        Actually Work.
+      </h1>
+
+      <p class="hero-desc">
+        From games to Android apps to web tools — I learn by doing, ship by
+        experimenting, and grow by never stopping.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+        <a href="#about" class="btn btn-ghost">Who Am I?</a>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+
+      <div class="hero-status">
+        <div class="status-dot"></div>
+        Currently learning & building
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-left reveal">
+        <div class="section-label">Who I Am</div>
+        <h2>A builder who<br />starts from zero.</h2>
+        <div class="about-body">
+          <p>
+            Hey, I'm <strong>Ajay</strong>. I'm a developer who picked up coding
+            not from a bootcamp or university, but from
+            <strong>sheer curiosity and a stubborn desire to make things</strong
+            >.
+          </p>
+          <p>
+            I work across Android (Kotlin), web development (HTML, CSS, JS), and
+            game design — teaching myself each new tool by throwing myself into
+            a real project with it. No tutorials, just building.
+          </p>
+        </div>
+      </div>
+      <div class="about-right reveal reveal-delay-2">
+        <div class="stat-card">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="stat-card accent2">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Platforms Mastered</div>
+        </div>
+        <div class="stat-card accent3">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Curiosity Level</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">0→1</div>
+          <div class="stat-label">Approach to every idea</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-rule"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="skills-header reveal">
+        <h2>What<br /><span>I Do</span></h2>
+        <p class="skills-subtitle">
+          A growing stack of skills, picked up one project at a time — each one
+          earned the hard way.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item reveal reveal-delay-1">
+          <span class="skill-icon">📱</span>
+          <div class="skill-title">Android Development</div>
+          <p class="skill-desc">
+            Building native Android apps in Kotlin with Android Studio.
+            Real-time features, Firebase backends, canvas drawing, and APK
+            deployment on physical devices.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Android Studio</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">XML Layouts</span>
+          </div>
+        </div>
+        <div class="skill-item reveal reveal-delay-2">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-title">Web Development</div>
+          <p class="skill-desc">
+            Crafting full-featured web apps from scratch using vanilla HTML,
+            CSS, and JavaScript. localStorage persistence, responsive design,
+            and clean UX — no frameworks needed.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag green">Vercel</span>
+          </div>
+        </div>
+        <div class="skill-item reveal reveal-delay-3">
+          <span class="skill-icon">🎮</span>
+          <div class="skill-title">Game Development</div>
+          <p class="skill-desc">
+            Designing and building browser-based games with canvas animations,
+            collision detection, and game loop logic — then packaging them as
+            Android APKs using Capacitor.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Canvas API</span>
+            <span class="tag red">Game Logic</span>
+            <span class="tag">Capacitor</span>
+          </div>
+        </div>
+        <div class="skill-item reveal reveal-delay-1">
+          <span class="skill-icon">☁️</span>
+          <div class="skill-title">Backend & Cloud</div>
+          <p class="skill-desc">
+            Integrating Firebase Firestore for real-time sync, Firebase Storage
+            for file distribution, and cloud hosting on Vercel. Building apps
+            that live beyond localhost.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Firestore</span>
+            <span class="tag">Firebase Storage</span>
+            <span class="tag green">Vercel</span>
+          </div>
+        </div>
+        <div class="skill-item reveal reveal-delay-3">
+          <span class="skill-icon">🔧</span>
+          <div class="skill-title">Dev Tools & Workflow</div>
+          <p class="skill-desc">
+            Comfortable navigating Android Studio, VS Code, Git workflows, and
+            the command line. Configuring toolchains, managing environments, and
+            shipping things that actually run.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Android Studio</span>
+            <span class="tag">VS Code</span>
+            <span class="tag green">Git</span>
+            <span class="tag">npm</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASPIRATIONS -->
+    <section id="aspirations">
+      <div class="aspire-intro">
+        <div class="aspire-number reveal">★</div>
+        <div class="aspire-content reveal reveal-delay-1">
+          <div class="section-label">What I'm Aiming For</div>
+          <h2>Big dreams,<br />small commits.</h2>
+          <p
+            style="
+              color: var(--muted);
+              font-size: 1rem;
+              line-height: 1.8;
+              max-width: 560px;
+              margin-top: 16px;
+            "
+          >
+            I don't just want to write code — I want to build things that
+            matter. Here's where I'm headed, one project at a time.
+          </p>
+        </div>
+      </div>
+      <div class="aspire-list">
+        <div class="aspire-card c1 reveal reveal-delay-1">
+          <div class="aspire-card-num">01</div>
+          <div class="aspire-card-title">Ship Real Products</div>
+          <p class="aspire-card-desc">
+            Graduate from side-projects to products people actually use. Get my
+            apps on the Play Store. Build tools that solve real problems for
+            real people.
+          </p>
+        </div>
+        <div class="aspire-card c2 reveal reveal-delay-2">
+          <div class="aspire-card-num">02</div>
+          <div class="aspire-card-title">Master Full-Stack Development</div>
+          <p class="aspire-card-desc">
+            Go deeper into backend architecture, databases, and APIs. I want to
+            be able to take an idea from concept to deployed product — end to
+            end, solo.
+          </p>
+        </div>
+        <div class="aspire-card c4 reveal reveal-delay-4">
+          <div class="aspire-card-num">03</div>
+          <div class="aspire-card-title">Build in Public</div>
+          <p class="aspire-card-desc">
+            Document the journey, share the failures and wins, and contribute
+            back to the community of builders that inspired me to start.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-rule"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="projects-header">
+        <div class="section-label reveal">Projects</div>
+        <h2 class="reveal reveal-delay-1">Things I've<br />actually built.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Doodle App -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-visual">
+            <div class="vis-bg pv-doodle">
+              <div
+                class="vis-deco"
+                style="
+                  width: 200px;
+                  height: 200px;
+                  background: var(--accent);
+                  top: -60px;
+                  right: -60px;
+                "
+              ></div>
+              <div
+                class="vis-deco"
+                style="
+                  width: 80px;
+                  height: 80px;
+                  background: var(--accent);
+                  bottom: 20px;
+                  left: 20px;
+                "
+              ></div>
+            </div>
+            <div class="project-icon-display" style="color: var(--accent)">
+              ✏️
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type">Android App</span>
+              <span class="project-status status-wip">In Progress</span>
+            </div>
+            <div class="project-title">Real-Time Doodle Share</div>
+            <p class="project-desc">
+              Two users draw on a shared canvas and send each other doodles in
+              real-time. Built with Firebase Firestore for live sync, custom
+              canvas touch controls, and a clean two-player flow.
+            </p>
+            <div class="project-stack">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Android Studio</span>
+              <span class="tag">Firebase Firestore</span>
+              <span class="tag">Canvas API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Asteroid Shooter -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-visual">
+            <div class="vis-bg pv-asteroid">
+              <div
+                class="vis-deco"
+                style="
+                  width: 160px;
+                  height: 160px;
+                  background: #b47cff;
+                  top: -40px;
+                  left: -40px;
+                "
+              ></div>
+              <div
+                class="vis-deco"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  background: #b47cff;
+                  bottom: 30px;
+                  right: 30px;
+                "
+              ></div>
+            </div>
+            <div class="project-icon-display" style="color: #b47cff">🚀</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type">Web → Android Game</span>
+              <span class="project-status status-live">Shipped</span>
+            </div>
+            <div class="project-title">Asteroid Shooter</div>
+            <p class="project-desc">
+              A browser-based arcade shooter built in HTML5 canvas, then
+              packaged into a real Android APK using Capacitor (Ionic) and
+              installed on a physical device. Full shoot-em-up gameplay with
+              score tracking.
+            </p>
+            <div class="project-stack">
+              <span class="tag">HTML5 Canvas</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag red">Capacitor</span>
+              <span class="tag red">Android APK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nourish -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-visual">
+            <div class="vis-bg pv-nourish">
+              <div
+                class="vis-deco"
+                style="
+                  width: 180px;
+                  height: 180px;
+                  background: var(--accent3);
+                  top: -50px;
+                  right: -50px;
+                "
+              ></div>
+              <div
+                class="vis-deco"
+                style="
+                  width: 70px;
+                  height: 70px;
+                  background: var(--accent3);
+                  bottom: 10px;
+                  left: 40px;
+                "
+              ></div>
+            </div>
+            <div class="project-icon-display" style="color: var(--accent3)">
+              🥗
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type">Web App</span>
+              <span class="project-status status-live">Shipped</span>
+            </div>
+            <div class="project-title">Nourish — Calorie Tracker</div>
+            <p class="project-desc">
+              A single-file web app for tracking daily calories with monthly
+              history, a personal food library, and full localStorage
+              persistence. Clean UI, no dependencies, no server needed.
+            </p>
+            <div class="project-stack">
+              <span class="tag green">HTML</span>
+              <span class="tag green">CSS</span>
+              <span class="tag green">JavaScript</span>
+              <span class="tag green">localStorage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bubble Game -->
+        <div class="project-card reveal reveal-delay-4">
+          <div class="project-visual">
+            <div class="vis-bg pv-bubble">
+              <div
+                class="vis-deco"
+                style="
+                  width: 140px;
+                  height: 140px;
+                  background: var(--accent2);
+                  top: -30px;
+                  left: -30px;
+                "
+              ></div>
+              <div
+                class="vis-deco"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  background: var(--accent2);
+                  bottom: -20px;
+                  right: -20px;
+                "
+              ></div>
+            </div>
+            <div class="project-icon-display" style="color: var(--accent2)">
+              🫧
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type">Browser Game</span>
+              <span class="project-status status-live">Shipped</span>
+            </div>
+            <div class="project-title">Bubble Popper</div>
+            <p class="project-desc">
+              My very first project — a browser game built from pure HTML, CSS,
+              and vanilla JS. Features disappearing bubbles, game-ending dark
+              balloons, a scoring system, and iterative improvements built one
+              change at a time.
+            </p>
+            <div class="project-stack">
+              <span class="tag red">HTML5</span>
+              <span class="tag red">CSS3</span>
+              <span class="tag red">Vanilla JS</span>
+              <span class="tag red">First Project</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="foot-name">AJAY</div>
+          <p>Developer · Builder · Curious mind</p>
+        </div>
+        <div class="footer-right">
+          <p
+            style="
+              font-size: 0.85rem;
+              color: var(--accent);
+              margin-bottom: 12px;
+            "
+          >
+            Let's connect →
+          </p>
+          <p>Built with HTML, CSS & pure JS</p>
+          <p>No frameworks. No excuses.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
