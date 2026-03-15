@@ -172,3 +172,24 @@ function typewriter() {
   setTimeout(typewriter, deleting ? 40 : 80);
 }
 setTimeout(typewriter, 1500);
+
+const tip = document.getElementById('cursorTip');
+
+// Update position on mouse move
+document.addEventListener('mousemove', e => {
+  tip.style.left = e.clientX + 'px';
+  tip.style.top = (e.clientY - 30) + 'px'; // 30px above cursor
+});
+
+// Show on project card hover
+document.querySelectorAll('.project-card:not(:first-child)').forEach(card => {
+  card.addEventListener('mouseenter', () => tip.classList.add('visible'));
+  card.addEventListener('mouseleave', () => tip.classList.remove('visible'));
+});
+
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const url = card.getAttribute('data-url');
+    if (url) window.open(url, '_blank');
+  });
+});

@@ -72,6 +72,29 @@ body {
     height 0.3s;
 }
 
+.cursor-tip {
+  position: fixed;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 8px 14px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.cursor-tip.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* Noise texture overlay */
 body::before {
   content: "";
@@ -219,6 +242,12 @@ section {
   width: 32px;
   height: 1px;
   background: var(--accent);
+}
+
+.hero-tag span {
+  display: inline-block;
+  min-width: 320px;
+  min-height: 20px;
 }
 
 h1 {
@@ -923,7 +952,7 @@ footer {
 /* Scroll reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
+  will-change: transform, opacity;
   transition:
     opacity 0.8s ease,
     transform 0.8s ease;
